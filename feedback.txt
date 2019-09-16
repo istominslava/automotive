@@ -1,0 +1,7 @@
+1. To fix issue with Responsive in Dev tools emulator, add <meta name="viewport" content="width=device-width"> in <head> in the index.html
+2. Form: a)action should not be empty. Add action="/" to form tag, for example
+        b) Add round paddings to form, not to input elements
+        c) Name for inputs have to be unique and describes goal of input. Example name="email-address"
+3. Do not add classes like 'first' or 'last'. Use css first-child, last-child 
+4. in footer. logo-2 not ok. Use .footer-logo for example
+5. Add 'alt' attributes with appropriate text
