@@ -150,7 +150,7 @@ input[type="submit"]:active {
  background-color: #130e27;
 }
 
-.last__form {
+.form-field {
  margin-bottom: 20px;
 }
 
@@ -342,17 +342,14 @@ h4 {
  justify-items: right;
 }
 
-.gallery-block p:hover {
+.gallery-block:hover {
  color: #c62314;
- width: 440px;
- height: 140px;
  background-color: #efefef;
 }
-
-
-.test-logo:hover {
+.gallery-block:hover .test-logo {
  transform: scale(1.2);
- }
+}
+
 
 .gallery-block {
  position: relative;
@@ -504,6 +501,10 @@ footer {
  }
  
  @media screen and (max-width : 397px) {
-  
+  .services {
+    display: grid;
+	grid-template-columns: 1fr;
+   }
+   
    
  }
