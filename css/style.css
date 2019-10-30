@@ -247,7 +247,7 @@ input[type="submit"]:active {
 .cards {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- grid-column-gap: 25px;
+ grid-gap: 25px;
  text-align: center;
 }
 
@@ -437,7 +437,6 @@ footer {
  }
  @media screen and (max-width : 768px) {
    .heading {
-    display: grid;
 	grid-template-columns: 1fr;
 	justify-items: center;
    }
@@ -452,7 +451,6 @@ footer {
    
    
    .services {
-    display: grid;
 	grid-template-columns: 2fr 2fr;
    }
    
@@ -461,7 +459,6 @@ footer {
    }
    
    .about__us {
-    display: grid;
    	grid-template-columns: 1fr;
    }
    
@@ -470,10 +467,8 @@ footer {
    }
    
    .cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-	grid-row-gap: 25px;
+    grid-template-columns: 335px;
+	justify-content: center;
    }
    
    .gallery-grid {
@@ -489,7 +484,6 @@ footer {
    }
    
    .footer {
-    display: grid;
     grid-template-columns: 1fr;
 	justify-items: center;
    }
@@ -502,9 +496,34 @@ footer {
  
  @media screen and (max-width : 397px) {
   .services {
-    display: grid;
 	grid-template-columns: 1fr;
    }
-   
-   
  }
+ 
+ @madia print {
+   body {
+   background-color: transparent !important;
+   color: #000 !important;
+   box-shadow: none !important;
+   }
+   
+   h1, h2, h3, h4, p {
+    color: #000 !important;
+   }
+   
+   .navigation,
+   img,
+   footer {
+    display: none !important;
+   }
+   
+   ul, img {
+    page-break-inside: avoid;
+}
+   
+   @page {
+   margin: 2cm;
+   }
+ }
+ 
+  
