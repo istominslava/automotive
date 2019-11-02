@@ -240,8 +240,8 @@ input[type="submit"]:active {
  text-transform: uppercase;
  font-weight: bold;
  text-align: center;
- padding-top: 65px;
- padding-bottom: 60px;
+ margin-top: 65px;
+ margin-bottom: 60px;
 }
 
 .cards {
@@ -428,7 +428,6 @@ footer {
    display: grid;
    grid-template-columns: 1fr;
    justify-items: left;
-   margin-bottom: 75px;
   }
   
   .services__title {
@@ -491,7 +490,7 @@ footer {
     justify-self: center;
 	margin-top: 10px;
    }
-
+   
  }
  
  @media screen and (max-width : 397px) {
@@ -500,30 +499,8 @@ footer {
    }
  }
  
- @madia print {
-   body {
-   background-color: transparent !important;
-   color: #000 !important;
-   box-shadow: none !important;
-   }
-   
-   h1, h2, h3, h4, p {
-    color: #000 !important;
-   }
-   
-   .navigation,
-   img,
-   footer {
-    display: none !important;
-   }
-   
-   ul, img {
-    page-break-inside: avoid;
-}
-   
-   @page {
+  @page {
    margin: 2cm;
    }
- }
  
   
